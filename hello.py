@@ -43,7 +43,7 @@ print(my_list) # prints entire list
 # Separate different-valued variables by a string in order to be printed together on the same line
 print("I am the 1st element:", my_list[1]) # prints the 1st element (2nd techincally) which is 2
 
-# A for-loop that prints each element of the list in a newline
+# A for-loop that prints each element of the list in a newline. For-loops are 0-indexed
 for y in my_list:
     print(y)
 
@@ -58,6 +58,7 @@ print(string1*3)
 for i in range(3):
     print(string1, end=" ") # this cancels the newline much amaze
 
+print()
 my_list2 = ["chicken", "nuggets"]
 new_list = my_list + my_list2 # you can append lists together in a new variable like this
 print()
@@ -84,7 +85,60 @@ if x_list.count(2) >= 10 and y_list.count(haba) == 10: # counts how many occuren
     print("Almost there...")
 if big_list.count(yee) >= 10 and big_list.count(haba) == 10:
     print("Great!")
+print()
 
 name = "Wesley"
 age = 20
 print("%s is %d years old" % (name, age)) # use a tuple if you hgve two or more argument specifiers
+
+print(len(name)) # this prints length of a string
+print(name.index('e')) # this prints the index location the first occurence of that letter
+print(name.count('e')) # this prints how many occurences of that letter appears within the string
+
+astring = "Hello world!"
+print(astring[3:8]) # this prints characters from 3rd index to 7th index
+print(astring[::-1]) # this prints the string in reverse
+print(astring.upper()) # this prints the string in uppercase
+print(astring.lower()) # this prints the string in lowercase
+print(astring.startswith("Hello")) # this prints true if the string does starts with this string or character
+print(astring.endswith("asdfasdfasdf")) # this prints true if the string does end with this string or character
+
+x = 2
+print()
+print(x == 2) # prints out True
+print(x == 3) # prints out False
+print(x < 3) # prints out True
+
+print()
+if name == "John" and age == 23:
+    print("Your name is John, and you are also 23 years old.")
+
+if name == "John" or name == "Wesley":
+    print("Your name is either John or Wesley.")
+
+# In Python they have the in operation which checks if something is IN a list
+if name in my_list:
+    print("Yes that name is in the list")
+else:
+    print("nah man that isnt here\n")
+
+# SIDE NOTE: Take account that the == and is operator are two different things
+    # x = [1,2,3]
+    # y = [1,2,3]
+        # x == y --> True
+        # x is y --> False
+
+for i in range(5):
+    print(i) # prints 0 to 4 because for loops are 0-indexed in Python
+
+print("----")
+
+for i in range(3, 8, 2):
+    print(i) # prints out 3, 5, 7 because it takes every second element
+
+print("----")
+
+count = 0
+while count < 5: # stops when count is 5
+    print(count) # prints 0 to 4 (technically 5 elements)
+    count = count + 1  # This is the same as count = count + 1
