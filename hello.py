@@ -142,3 +142,63 @@ count = 0
 while count < 5: # stops when count is 5
     print(count) # prints 0 to 4 (technically 5 elements)
     count = count + 1  # This is the same as count = count + 1
+
+# This is how to define a function in Python
+def my_function():
+    print("I am a function :)")
+
+# This is how to define a function with arguments in Python
+def function_with_arguments(a, b):
+    print("a is %d and b is %d" % (a,b))
+
+# This is how to define a function with arguments and a return statement in Python
+def function_with_return(a,b):
+    return a + b
+
+print()
+my_function() # how to call a function
+function_with_arguments(a, b)
+sum = function_with_return(a,b)
+print(sum)
+
+# This is how to create a class in Python
+class MyClass:
+    name = "Boba"
+
+    def function(self):
+        print("Hi! this is a message inside the class :)")
+
+# Initializing these Classes to variables
+myObject = MyClass()
+myObject2 = MyClass()
+myObject2.name = "Drake" # changes the name for myObject2's myClass name variable
+
+print("\n%s" % myObject.name)
+print(myObject2.name)
+
+myObject.function()
+
+# A dictionary is a data type similar to arrays, but works with keys and values instead
+dictionary = {}
+dictionary["John"] = 123456
+dictionary["Mary"] = 224466
+dictionary["Klay"] = 999999
+print()
+print(dictionary)
+
+# can also be initialized as :
+    # dictionary {
+        # "John" : 123456
+        # "Mary" : 224466
+        # "Klay" : 999999
+    # }
+
+# Iterating over entire dictionary
+for name, number in dictionary.items():
+    print("Phone number of %s is %d" % (name, number))
+
+# To delete a specified index in the dictionary
+del dictionary["Mary"] # or dictionary.pop("Mary")
+print(dictionary)
+
+# You define your own main function
