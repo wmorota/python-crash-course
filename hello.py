@@ -186,7 +186,7 @@ dictionary["Klay"] = 999999
 print()
 print(dictionary)
 
-# can also be initialized as :
+# This can also be initialized as :
     # dictionary {
         # "John" : 123456
         # "Mary" : 224466
